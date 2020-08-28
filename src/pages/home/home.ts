@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, IonicPage } from 'ionic-angular';
 
-@Component({
+@IonicPage()//Permite acessar a págin em mod String, entre aspas.
+@Component({//Controlador
   selector: 'page-home',
-  templateUrl: 'home.html'
+  templateUrl: 'home.html' // Qual arquivo ele controla
 })
 export class HomePage {
 
