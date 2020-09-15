@@ -8,5 +8,9 @@
 </ion-header>
 
 <ion-content padding>
-{{ email }}
+  <ion-avatar>
+    <img class="circle" [src]="cliente?.imageUrl || 'assets/imgs/avatar-blank.png'"> <!--O interrogação (?) é o operador de navegação segura do Angular, ou seja, se a variável 'cliente' ainda não tiver sido carregada a aplicação não vai apresentar erro, ela só renderizará ela quando a mesma for carregada-->
+  </ion-avatar>
+  <h2 text-center>{{cliente?.nome}}</h2>
+  <p text-center>{{cliente?.email}}</p>
 </ion-content>
